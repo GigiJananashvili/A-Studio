@@ -187,7 +187,6 @@ body {
     gap: 20px;
     width: 800px;
     height: 1000px;
-    /* background-color: red; */
     position: relative;
     display: flex;
     flex-direction: row;
@@ -329,3 +328,4 @@ body {
     left: 5%;
     top: 70%;
 }
+

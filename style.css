@@ -172,6 +172,10 @@ body {
 }
 
 .content3 {
+    background-image: url(assets/Rectangle\ 25\ \(1\).png),url(assets/Dot\ Ornament.png);
+    background-position: left top,bottom right;
+    background-repeat: no-repeat;
+    height: 430px;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -179,6 +183,13 @@ body {
     align-items: start;
     margin-left: 10%;
     gap: 20px;
+}
+
+.container1 {
+    background-image: url(assets/Rectangle\ 24.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+
 }
 
 .cards {

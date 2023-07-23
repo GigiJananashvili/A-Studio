@@ -253,8 +253,6 @@ body {
     gap: 20px;
     width: 800px;
     height: 1000px;
-    position: relative;
-    display: flex;
     flex-direction: row;
 }
 
@@ -569,6 +567,8 @@ line-height: 200%; /* 28px */
     background-image: none;
     
     }
+
+
     
     .content3 {
         background-image: url(assets/Rectangle\ 25\ \(1\).png),url(assets/Dot\ Ornament.png);
@@ -592,6 +592,29 @@ line-height: 200%; /* 28px */
         position: relative;
         display: flex;
         flex-direction: row;
+    }
+
+}
+
+@media screen and (max-width:1458px) {
+
+    .section3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .cards  {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        width: 800px;
+        height: 1000px;
+        flex-direction: row;
+        justify-content: center;
     }
 
 }
@@ -624,13 +647,13 @@ line-height: 200%; /* 28px */
 
 
 .cards {
-        position: relative;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        width: 800px;
-        height: 1000px;
-        justify-content: center;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 800px;
+    height: 1000px;
+    flex-direction: row;
     }
 
 .section3 {
@@ -671,6 +694,17 @@ line-height: 200%; /* 28px */
 
 }
 
+.section3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 200px;
+    margin-top: 150px;
+}
+
+
+
 }
 
 @media screen and (max-width:970px) {
@@ -688,6 +722,38 @@ line-height: 200%; /* 28px */
     .navigation {
         display: none;
     }
+
+    .section3 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 200px;
+        margin-top: 150px;
+    }
+}
+
+@media screen and (max-width:850px) {
+
+.cards {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 450px;
+    height: 1500px;
+    flex-direction: row;
+}
+
+.section3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 200px;
+    margin-top: 150px;
+}
+
 
 
 }

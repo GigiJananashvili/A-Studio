@@ -7,6 +7,36 @@ body {
     margin: 5;
 }
 
+.containerb {
+    display: none;
+    cursor: pointer;
+    margin-top: 30px;
+  }
+
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+    
+  }
+  
+  /* Rotate first bar */
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  /* Fade out the second bar */
+  .change .bar2 {
+    opacity: 0;
+  }
+  
+  /* Rotate last bar */
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+
 .container {
     max-width: 1950px;
     position: relative;
@@ -513,4 +543,151 @@ line-height: 200%; /* 28px */
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+
+@media screen and (max-width:1500px) {
+    .image1 {
+        width: 500px;
+        height: 500px;
+        border-radius: 100px;
+        position: relative;
+    }
+    
+    .section2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .h1 {
+        display: flex;
+        align-self: center;
+    }
+
+    .container1 {
+    background-image: none;
+    
+    }
+    
+    .content3 {
+        background-image: url(assets/Rectangle\ 25\ \(1\).png),url(assets/Dot\ Ornament.png);
+        background-position: left top,bottom right;
+        background-repeat: no-repeat;
+        height: 430px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        align-items: start;
+        margin-left: 2%;
+    }
+
+    .cards {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        width: 800px;
+        height: 1000px;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+    }
+
+}
+
+@media screen and (max-width:1190px) {
+
+.content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2%;
+}
+
+.image11 {
+    border-radius: 100px;
+    width: 500px;
+    height: 500px;
+}
+
+.img2 {
+    display: none;
+}
+
+.section1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+    }
+
+
+.cards {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        width: 800px;
+        height: 1000px;
+        justify-content: center;
+    }
+
+.section3 {
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentimages {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+}
+
+@media screen and (max-width:1096px) {
+
+    .section1 {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+    }
+.image11 {
+    margin-left: 0;
+}
+
+.content {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-position:center bottom;
+
+}
+
+}
+
+@media screen and (max-width:970px) {
+
+    .containerb{
+        position: absolute;
+        right: 5%;
+        display: inline-block;
+    }
+
+    .bar1, .bar2, .bar3 {
+        display: block;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+
 }
